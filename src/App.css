@@ -15,6 +15,56 @@ nav.main-nav {
   display: none;
 }
 
+main {
+  padding: 50px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background: violet;
+}
+
+.animation1 {
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation-name: change-color-size;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes change-color-size {
+  0% {
+    font-size: 10px;
+  }
+
+  100% {
+    font-size: 100px;
+    width: 200px;
+    background: aqua;
+  }
+}
+
+.animation2 {
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  /* animation: rotate-change-opacity 5s; */
+  animation-name: rotate-change-opacity;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotate-change-opacity {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.1;
+    transform: rotate(180deg);
+  }
+}
+
 @media (min-width: 992px) {
   nav.main-nav {
     background: transparent;

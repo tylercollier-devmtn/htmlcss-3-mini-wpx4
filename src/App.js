@@ -13,6 +13,9 @@ class App extends Component {
             <div className="desktop">ABOUT DOWNLOAD CONTACT</div>
           </div>
         </nav>
+        <main>
+          <div className="square animation2 animation1">I am an L7</div>
+        </main>
       </div>
     );
   }
