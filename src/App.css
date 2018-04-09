@@ -65,6 +65,21 @@ main {
   }
 }
 
+.drawer {
+  position: fixed;
+  top: 0;
+  right: -200px;
+  bottom: 0;
+  width: 200px;
+  background: black;
+  color: white;
+  transition: 1s;
+}
+
+.open {
+  right: 0;
+}
+
 @media (min-width: 992px) {
   nav.main-nav {
     background: transparent;
