@@ -8,7 +8,10 @@ class App extends Component {
       <div>
         <nav className="main-nav">
           <div className="logo">START BOOTSTRAP</div>
-          <div className="links">MENU</div>
+          <div className="links">
+            <div className="phone">MENU</div>
+            <div className="desktop">ABOUT DOWNLOAD CONTACT</div>
+          </div>
         </nav>
       </div>
     );
